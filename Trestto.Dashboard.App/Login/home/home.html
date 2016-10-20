@@ -1,0 +1,430 @@
+﻿<style>
+    /* Based on a Dribbble shot by Andreas Storm
+       http://dribbble.com/shots/1127916-Sign-in
+    */
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url(http://i.imgur.com/MQB99sg.jpg) #a9b89e;
+        font-family: Arial;
+        font-size: 12px;
+        color: #C4BCB0;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        background: #EAE6E1;
+        border: 0;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 3px;
+        width: 100%;
+        margin: 5px 0;
+        outline: medium none;
+        color: #838383;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        outline: medium none;
+        margin-right: 10px;
+    }
+
+        input[type="checkbox"]::before {
+            width: 9px;
+            height: 9px;
+            content: "";
+            display: block;
+            border: 3px solid #C4BCB0;
+            border-radius: 9px;
+            position: absolute;
+        }
+
+        input[type="checkbox"]:checked::after {
+            width: 5px;
+            height: 5px;
+            content: "";
+            display: block;
+            background: #C4BCB0;
+            border-radius: 5px;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+
+    input[type="submit"] {
+        display: block;
+        padding: 10px;
+        background: #50BFA4;
+        border: 0;
+        border-radius: 3px;
+        font-weight: bold;
+        width: 100%;
+        color: #fff;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+        input[type="submit"]:hover {
+            background: #58CCB0;
+        }
+
+    .main-form {
+        width: 350px;
+        margin: 100px auto;
+        padding: 50px;
+        border: 1px solid rgba(0,0,0,0.1);
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        background: #fff;
+    }
+
+    .logo {
+        background: #50BFA4;
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto 30px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: relative;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+        .logo::before {
+            width: 14px;
+            height: 14px;
+            display: block;
+            border: 5px solid #F7F5F2;
+            content: "";
+            position: absolute;
+            border-radius: 14px;
+            top: 8px;
+            left: 8px;
+        }
+
+    .main-form > label {
+        display: block;
+        margin: 10px 0 15px;
+        line-height: 15px;
+        cursor: pointer;
+    }
+
+    .main-form > div {
+        margin-top: 20px;
+    }
+
+    a {
+        color: #C4BCB0;
+        text-decoration: none;
+    }
+
+    .main-form > a {
+        font-size: 11px;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .main-form > div > a:first-child {
+        font-weight: bold;
+    }
+
+    .main-form > div > a:nth-child(2) {
+        border: 1px solid #3DA087;
+        display: inline-block;
+        border-radius: 3px;
+        color: #3DA087;
+        font-weight: bold;
+        padding: 7px 15px;
+        margin-left: 28px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+        .main-form > div > a:nth-child(2):hover {
+            background: #3DA087;
+            color: #fff;
+        }
+
+    @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+    div.social-wrap button {
+        padding-right: 45px;
+        height: 35px;
+        background: none;
+        border: none;
+        display: block;
+        background-size: 35px 35px;
+        background-position: right center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+        color: white;
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 14px;
+        margin-bottom: 15px;
+        width: 205px;
+        border-bottom: 2px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        box-shadow: 0 4px 2px -2px gray;
+        text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0;
+    }
+
+    button#facebook {
+        border-color: #2d5073;
+        background-color: #3b5998;
+        background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+    }
+
+    button#twitter {
+        border-color: #007aa6;
+        background-color: #008cbf;
+        background-image: url(https://g.twimg.com/Twitter_logo_white.png);
+    }
+
+    button#googleplus {
+        border-color: #111;
+        background-color: #d10e73;
+        text-shadow: #333 -1px -1px 0;
+        background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png);
+    }
+
+    div.social-wrap button:active {
+        background-color: #222;
+    }
+
+    div.social-wrap.b button {
+        padding-right: 45px;
+        height: 35px;
+        background: none;
+        border: none;
+        display: block;
+        background-size: 25px 25px, cover;
+        background-position: 170px center, center center;
+        background-repeat: no-repeat, repeat;
+        border-radius: 4px;
+        color: white;
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 14px;
+        margin-bottom: 15px;
+        width: 205px;
+        border-bottom: 2px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        box-shadow: 0 4px 2px -2px gray;
+        text-shadow: rgba(0, 0, 0, 0.4) -1px -1px 0;
+    }
+
+    div.social-wrap.b > .googleplus {
+        background-size: 30px 30px, cover;
+        background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));
+    }
+
+    div.social-wrap.b > .facebook {
+        background: url(http://aroosamanzar.com/uploads/images/facebook-logo-png-white-i6.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
+        background-size: 25px 25px, cover;
+        background-position: 170px center, center center;
+        background-repeat: no-repeat, repeat;
+    }
+
+    div.social-wrap.b > .twitter {
+        background-image: url(https://g.twimg.com/Twitter_logo_white.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));
+    }
+
+    div.social-wrap.b button em {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: "Times New Roman";
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    div.social-wrap.c button {
+        padding-left: 35px;
+        padding-right: 0px;
+        height: 35px;
+        background: none;
+        border: none;
+        display: block;
+        background-size: 25px 25px, cover;
+        background-position: 10px center, center center;
+        background-repeat: no-repeat, repeat;
+        border-radius: 4px;
+        color: white;
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 14px;
+        margin-bottom: 15px;
+        width: 205px;
+        border-bottom: 2px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        box-shadow: 0 4px 2px -2px gray;
+        text-shadow: rgba(0, 0, 0, 0.4) -1px -1px 0;
+    }
+
+    div.social-wrap.c > .googleplus {
+        background-size: 30px 30px, cover;
+        background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));
+    }
+
+    div.social-wrap.c > .facebook {
+        background: url(http://aroosamanzar.com/uploads/images/facebook-logo-png-white-i6.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
+        background-size: 25px 25px, cover;
+        background-position: 10px center, center center;
+        background-repeat: no-repeat, repeat;
+    }
+
+    div.social-wrap.c > .twitter {
+        background-image: url(https://g.twimg.com/Twitter_logo_white.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));
+    }
+
+    div.social-wrap.c button em {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: "Times New Roman";
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    logins {
+        display: block !important;
+        padding: 10px !important;
+        background: #50BFA4 !important;
+        border: 0 !important;
+        border-radius: 3px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        color: #fff !important;
+        cursor: pointer!important;
+        -webkit-transition: all 0.3s !important;
+        -moz-transition: all 0.3s !important;
+        transition: all 0.3s !important;
+    }
+
+    ul.sm-wrap {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+        ul.sm-wrap li {
+            font-family: "Helvetica", sans-serif;
+            font-size: 11px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+
+            ul.sm-wrap li#facebook-sm {
+                background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+            }
+
+            ul.sm-wrap li#twitter-sm {
+                background-image: url(https://g.twimg.com/Twitter_logo_blue.png);
+            }
+
+            ul.sm-wrap li#instagram-sm {
+                background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png) !important;
+            }
+
+        ul.sm-wrap a {
+            text-decoration: none;
+        }
+</style>
+<head>
+    <title>E-Commerce Maker - Sign In</title>
+</head>
+<script src="../../Scripts/jquery-1.10.2.js"></script>
+
+<!--
+
+Follow me on
+Dribbble: https://dribbble.com/supahfunk
+Twitter: https://twitter.com/supahfunk
+Codepen: http://codepen.io/supah/
+
+-->
+<div class="main-form">
+    <i class="logo"></i>
+    <input type="text" placeholder="Username" value="">
+    <input type="password" placeholder="Password" value="">
+    <label>
+        <input type="checkbox"> Remember me
+    </label>
+    <input type="submit" value="Sign in">
+
+    <a href="#" title="">Forgot your password?</a>
+
+    <div>
+        <a href="#" title="">Don't have an account?</a>
+        <a href="#" id="signup" title="">Sign Up</a>
+    </div>
+    <div class="social-wrap a">
+        <button style="display: block ;
+        padding: 10px !important;
+
+        border: 0 !important;
+        border-radius: 3px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        color: #fff !important;
+        cursor: pointer!important;
+        -webkit-transition: all 0.3s !important;
+        -moz-transition: all 0.3s !important;
+        transition: all 0.3s !important;" class="logins" id="facebook">Sign up with Facebook</button>
+        <button style="display: block ;
+        padding: 10px !important;
+
+        border: 0 !important;
+        border-radius: 3px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        color: #fff !important;
+        cursor: pointer!important;
+        -webkit-transition: all 0.3s !important;
+        -moz-transition: all 0.3s !important;
+        transition: all 0.3s !important;" id="twitter">Sign up with Twitter</button>
+        <button style="display: block ;
+        padding: 10px !important;
+
+        border: 0 !important;
+        border-radius: 3px !important;
+        font-weight: bold !important;
+        width: 100% !important;
+        color: #fff !important;
+        cursor: pointer!important;
+        -webkit-transition: all 0.3s !important;
+        -moz-transition: all 0.3s !important;
+        transition: all 0.3s !important;" id="googleplus">Sign up with Instagram</button>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $('.social-wrap').hide();
+
+        $('#signup').click(function () {
+            $('.social-wrap').show();
+        });
+    });
+</script>

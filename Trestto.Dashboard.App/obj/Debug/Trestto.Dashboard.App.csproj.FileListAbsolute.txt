@@ -1,0 +1,266 @@
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\ApplicationInsights.config
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\csc.exe
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\System.Collections.Immutable.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\vbc.exe
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\VBCSCompiler.exe
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\roslyn\VBCSCompiler.exe.config
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.dll.config
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.pdb
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Antlr3.Runtime.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\EntityFramework.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\EntityFramework.SqlServer.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.Web.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.WindowsServer.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.ApplicationInsights.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Google.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Web.Infrastructure.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Newtonsoft.Json.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Owin.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Helpers.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Mvc.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Optimization.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Razor.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.WebPages.Deployment.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.WebPages.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.WebPages.Razor.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\WebGrease.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.Web.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AI.WindowsServer.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.ApplicationInsights.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Helpers.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Mvc.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Optimization.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Razor.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.WebPages.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.WebPages.Deployment.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.WebPages.Razor.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Antlr3.Runtime.pdb
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Newtonsoft.Json.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\EntityFramework.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\EntityFramework.SqlServer.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Google.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.csprojResolveAssemblyReference.cache
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.pdb
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Net.Http.Formatting.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Http.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Http.WebHost.dll
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Net.Http.Formatting.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Http.xml
+c:\users\molax\documents\visual studio 2015\Projects\Trestto.Dashboard.App\Trestto.Dashboard.App\bin\System.Web.Http.WebHost.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\ApplicationInsights.config
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\csc.exe
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\System.Collections.Immutable.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\System.Reflection.Metadata.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\vbc.exe
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\VBCSCompiler.exe
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\VBCSCompiler.exe.config
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.dll.config
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.pdb
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Antlr3.Runtime.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.SqlServer.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.Agent.Intercept.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.DependencyCollector.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.Web.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.WindowsServer.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.ApplicationInsights.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Core.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Cookies.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Facebook.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Google.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.OAuth.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Twitter.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Web.Infrastructure.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Newtonsoft.Json.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Owin.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Net.Http.Formatting.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Helpers.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.WebHost.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Mvc.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Optimization.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Razor.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Deployment.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Razor.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\WebGrease.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.DependencyCollector.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.Web.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.WindowsServer.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.ApplicationInsights.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Net.Http.Formatting.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.WebHost.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Helpers.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Mvc.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Optimization.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Razor.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Deployment.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Razor.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Antlr3.Runtime.pdb
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Newtonsoft.Json.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.SqlServer.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Core.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Facebook.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Cookies.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.OAuth.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Google.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Twitter.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.csprojResolveAssemblyReference.cache
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.dll
+E:\GitLab\DashboardAngular\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.pdb
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.csprojResolveAssemblyReference.cache
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.pdb
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\ApplicationInsights.config
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\csc.exe
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\System.Collections.Immutable.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\System.Reflection.Metadata.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\vbc.exe
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\VBCSCompiler.exe
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\roslyn\VBCSCompiler.exe.config
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.dll.config
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Trestto.Dashboard.App.pdb
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Antlr3.Runtime.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.SqlServer.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.DependencyCollector.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.Web.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.WindowsServer.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.ApplicationInsights.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Google.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Web.Infrastructure.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Newtonsoft.Json.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Objetos.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Owin.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Net.Http.Formatting.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Helpers.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.WebHost.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Mvc.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Optimization.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Razor.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Deployment.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Razor.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\WebGrease.dll
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Objetos.pdb
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.DependencyCollector.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.Web.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AI.WindowsServer.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.ApplicationInsights.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Net.Http.Formatting.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Http.WebHost.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Helpers.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Mvc.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Optimization.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.Razor.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Deployment.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\System.Web.WebPages.Razor.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Antlr3.Runtime.pdb
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Newtonsoft.Json.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\EntityFramework.SqlServer.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Google.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Gitlab\DashboardAngular\Trestto.Dashboard.App\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
