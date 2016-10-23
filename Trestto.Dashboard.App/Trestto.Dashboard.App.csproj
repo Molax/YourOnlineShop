@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -230,6 +234,9 @@
     <Content Include="Login\app.js" />
     <Content Include="Login\home\home.html" />
     <Content Include="Login\home\rootCtrl.js" />
+    <Content Include="Login\home\widget.directive.js" />
+    <Content Include="Login\minhaloja\minhaloja.controller.js" />
+    <Content Include="Login\minhaloja\minhaloja.html" />
     <Content Include="Login\modules\common.module.js" />
     <Content Include="Login\services\apiSevice.js" />
     <Content Include="favicon.ico" />
@@ -237,6 +244,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\atendente_Logo.png" />
+    <Content Include="Login\setup\setup.controller.js" />
+    <Content Include="Login\setup\setup.html" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\Angular\angular-canvas-gauge.js" />

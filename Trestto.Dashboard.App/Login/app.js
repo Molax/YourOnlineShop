@@ -11,10 +11,24 @@
     function config($routeProvider, $locationProvider) {
         $routeProvider
             .when("/", {
-                templateUrl: "dashboard/home/home.html",
+                templateUrl: "Login/home/home.html",
                 controller: "homeCtrl"
             })
-        .otherwise({ redirecTo: "#/home" });
+             .when("/setup", {
+                 templateUrl: "Login/setup/setup.html",
+                 controller: "setupCtrl"
+             }).when("/minhaloja", {
+                 templateUrl: "Login/minhaloja/minhaloja.html",
+                 controller: "minhalojaCtrl"
+             }).when("/minhaloja/:userId", {
+                 templateUrl: "Login/minhaloja/minhaloja.html",
+                 controller: "minhalojaCtrl"
+             })
+            .when("/setup/:userId", {
+                templateUrl: "Login/setup/setup.html",
+                controller: "setupCtrl"
+            })
+        .otherwise({ redirecTo: "#/setup" });
     }
 
     run.$inject = ["$location"];

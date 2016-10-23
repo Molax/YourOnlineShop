@@ -9,5 +9,11 @@ namespace Trestto.Dashboard.App.Controllers
 {
     public class DashController : Controller
     {
+        [HttpPost]
+        public JsonResult VerificaLoja(string param)
+        {
+            var x = "aeaeae";
+            return Json(x);
+        }
     }
 }

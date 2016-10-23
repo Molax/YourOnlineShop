@@ -1,8 +1,4 @@
 ﻿<style>
-    /* Based on a Dribbble shot by Andreas Storm
-       http://dribbble.com/shots/1127916-Sign-in
-    */
-
     * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -309,7 +305,7 @@
         font-weight: bold !important;
         width: 100% !important;
         color: #fff !important;
-        cursor: pointer!important;
+        cursor: pointer !important;
         -webkit-transition: all 0.3s !important;
         -moz-transition: all 0.3s !important;
         transition: all 0.3s !important;
@@ -349,92 +345,4 @@
     <title>E-Commerce Maker - Sign In</title>
 </head>
 <script src="../../Scripts/jquery-1.10.2.js"></script>
-
-<div class="main-form">
-    <i class="logo"></i>
-    <input type="text" placeholder="Username" value="">
-    <input type="password" placeholder="Password" value="">
-    <label>
-        <input type="checkbox"> Remember me
-    </label>
-    <input type="submit" value="Sign in">
-
-    <a href="#" title="">Forgot your password?</a>
-
-    <div>
-        <a href="#" title="">Don't have an account?</a>
-        <a id="signup" title="">Sign Up</a>
-    </div>
-    <div class="social-wrap a">
-        <button style="display: block ;
-        padding: 10px !important;
-
-        border: 0 !important;
-        border-radius: 3px !important;
-        font-weight: bold !important;
-        width: 100% !important;
-        color: #fff !important;
-        cursor: pointer!important;
-        -webkit-transition: all 0.3s !important;
-        -moz-transition: all 0.3s !important;
-        transition: all 0.3s !important;" class="logins" id="facebook" ng-click="loginface()">Sign up with Facebook</button>
-
-
-        <button style="display: block ;
-        padding: 10px !important;
-        border: 0 !important;
-        border-radius: 3px !important;
-        font-weight: bold !important;
-        width: 100% !important;
-        color: #fff !important;
-        cursor: pointer!important;
-        -webkit-transition: all 0.3s !important;
-        -moz-transition: all 0.3s !important;
-        transition: all 0.3s !important;" id="twitter">Sign up with Twitter</button>
-        <button style="display: block ;
-        padding: 10px !important;
-
-        border: 0 !important;
-        border-radius: 3px !important;
-        font-weight: bold !important;
-        width: 100% !important;
-        color: #fff !important;
-        cursor: pointer!important;
-        -webkit-transition: all 0.3s !important;
-        -moz-transition: all 0.3s !important;
-        transition: all 0.3s !important;" id="googleplus">Sign up with Instagram</button>
-    </div>
-  
-</div>
-<a href="#/minhaloja">Minha Loja</a>
-
-<button ng-click="loginface()">basasasas</button>     
-
-<script>
-
-    $(document).ready(function () {
-        $('.social-wrap').hide();
-
-        $('#signup').click(function () {
-            $('.social-wrap').show();
-        });
-
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1280426701991770',
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-    });
-</script>
+<h1>Welcome to the {{param}} store !</h1>

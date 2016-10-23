@@ -16,8 +16,6 @@ namespace Trestto.Dashboard.App
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
@@ -26,11 +24,14 @@ namespace Trestto.Dashboard.App
 
             bundles.Add(new ScriptBundle("~/bundles/dashboard").Include(
 
-                               "~/dashboard/modules/common.module.js",
-                           "~/dashboard/app.js",
-                           "~/dashboard/services/apiSevice.js",
-                      "~/dashboard/home/home.controller.js",
-                                        "~/dashboard/home/rootCtrl.js"
+                               "~/Login/modules/common.module.js",
+                           "~/Login/app.js",
+                           "~/Login/services/apiSevice.js",
+                                     "~/Login/home/widget.directive.js",
+                      "~/Login/home/home.controller.js",
+                                        "~/Login/home/rootCtrl.js",
+                                         "~/Login/setup/setup.controller.js",
+                                           "~/Login/minhaloja/minhaloja.controller.js"
            ));
 
 
@@ -41,21 +42,7 @@ namespace Trestto.Dashboard.App
                  "~/Scripts/Angular/angular.easypiechart.min.js",
                  "~/Scripts/Angular/jquery.easypiechart.fill.js",
                  "~/Scripts/Angular/ngRoute.js",
-                 "~/Scripts/Angular/gauge.js",
                  "~/Scripts/Angular/angular-canvas-gauge.js",
-                 "~/Scripts/Angular/ui-bootstrap.min.js",
-                 "~/Scripts/Angular/angular-perfect-scrollbar.js",
-                 "~/Scripts/Angular/calendar.js",
-                 "~/Scripts/Angular/loading-bar.js",
-                 "~/Scripts/Angular/slider.js",
-                 "~/Scripts/Angular/Chart.min.js",
-                 "~/Scripts/Angular/easypieChart.js",
-                 "~/Scripts/Angular/angular-chart.js",
-                 "~/Scripts/Angular/highchart.js",
-                 "~/Scripts/Angular/hichchartmore.js",
-                 "~/Scripts/Angular/exporting.js",
-                   "~/Scripts/Angular/drilldown.js",
-                     "~/Scripts/Angular/highdata.js",
                  "~/Scripts/Angular/angular-notify.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
