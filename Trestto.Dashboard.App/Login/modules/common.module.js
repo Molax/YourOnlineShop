@@ -1,3 +1,3 @@
 ﻿(function () {
-    angular.module('common', ['ngRoute'])
+    angular.module('common', ['ngRoute', 'ngSanitize', 'ui.bootstrap'])
 })();

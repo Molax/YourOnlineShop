@@ -4,7 +4,7 @@
 
     homeCtrl.$inject = ["$scope", "$location", "apiService"];
 
-   
+
 
     function homeCtrl($scope, $location, apiService) {
 
@@ -39,14 +39,14 @@
         $('.boxshadow').css('background-color', 'transparent');
 
         $scope.loginface = function () {
-           
+
 
             fbAsyncInit();
             // Tenta fazer o login
             FB.login(function (response) {
                 // Se usuário está logado ....
                 if (response.authResponse) {
-                    
+
                     $scope.setup();
                 }
             }, { scope: $scope.permissions });
@@ -54,18 +54,17 @@
 
         }
 
-        $scope.showDetail = function ()
-        {
-            
+        $scope.showDetail = function () {
+
             FB.api('/me', function (details) {
                 console.log(details.id);
                 FB.api('/' + details.id + '/photos/uploaded', function (data) {
-                   
-                 //   alert('https://www.facebook.com/photo.php?fbid=' + data.data[0].id);
+
+                    //   alert('https://www.facebook.com/photo.php?fbid=' + data.data[0].id);
                 });
             });
 
-           
+
         }
 
         $scope.Dashboard = function () {
