@@ -5,346 +5,355 @@
         box-sizing: border-box;
     }
 
+        *:before, *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
     body {
-        background: url(http://i.imgur.com/MQB99sg.jpg) #a9b89e;
-        font-family: Arial;
-        font-size: 12px;
-        color: #C4BCB0;
-    }
-
-    input[type="text"],
-    input[type="password"] {
-        background: #EAE6E1;
-        border: 0;
-        font-weight: bold;
-        padding: 10px;
-        border-radius: 3px;
-        width: 100%;
-        margin: 5px 0;
-        outline: medium none;
-        color: #838383;
-    }
-
-    input[type="checkbox"] {
-        -webkit-appearance: none;
-        width: 10px;
-        height: 10px;
-        position: relative;
-        outline: medium none;
-        margin-right: 10px;
-    }
-
-        input[type="checkbox"]::before {
-            width: 9px;
-            height: 9px;
-            content: "";
-            display: block;
-            border: 3px solid #C4BCB0;
-            border-radius: 9px;
-            position: absolute;
-        }
-
-        input[type="checkbox"]:checked::after {
-            width: 5px;
-            height: 5px;
-            content: "";
-            display: block;
-            background: #C4BCB0;
-            border-radius: 5px;
-            position: absolute;
-            left: 5px;
-            top: 5px;
-        }
-
-    input[type="submit"] {
-        display: block;
-        padding: 10px;
-        background: #50BFA4;
-        border: 0;
-        border-radius: 3px;
-        font-weight: bold;
-        width: 100%;
-        color: #fff;
-        cursor: pointer;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-    }
-
-        input[type="submit"]:hover {
-            background: #58CCB0;
-        }
-
-    .main-form {
-        width: 350px;
-        margin: 100px auto;
-        padding: 50px;
-        border: 1px solid rgba(0,0,0,0.1);
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-        background: #fff;
-    }
-
-    .logo {
-        background: #50BFA4;
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin: 0 auto 30px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        position: relative;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-        .logo::before {
-            width: 14px;
-            height: 14px;
-            display: block;
-            border: 5px solid #F7F5F2;
-            content: "";
-            position: absolute;
-            border-radius: 14px;
-            top: 8px;
-            left: 8px;
-        }
-
-    .main-form > label {
-        display: block;
-        margin: 10px 0 15px;
-        line-height: 15px;
-        cursor: pointer;
-    }
-
-    .main-form > div {
-        margin-top: 20px;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #333;
     }
 
     a {
-        color: #C4BCB0;
-        text-decoration: none;
+        color: #fff;
     }
 
-    .main-form > a {
-        font-size: 11px;
-        display: block;
+    .row {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0;
+        clear: both;
+    }
+
+        .row img {
+            max-width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+    .gallery ul li {
+        float: left;
+        margin: 0 0.87719%;
+        overflow: hidden;
+    }
+
+    header {
+        background-color: #84b4b1;
+        color: #fff;
         text-align: center;
-        margin: 10px 0;
+        padding: 30px 0 120px;
     }
 
-    .main-form > div > a:first-child {
-        font-weight: bold;
-    }
-
-    .main-form > div > a:nth-child(2) {
-        border: 1px solid #3DA087;
-        display: inline-block;
-        border-radius: 3px;
-        color: #3DA087;
-        font-weight: bold;
-        padding: 7px 15px;
-        margin-left: 28px;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-    }
-
-        .main-form > div > a:nth-child(2):hover {
-            background: #3DA087;
-            color: #fff;
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 65px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            line-height: 0.8;
+            padding-top: 50px;
+            font-family: "Montserrat", sans-serif;
         }
 
-    @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+            header h1 span {
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 25px;
+                line-height: 1;
+            }
 
-    div.social-wrap button {
-        padding-right: 45px;
-        height: 35px;
-        background: none;
-        border: none;
-        display: block;
-        background-size: 35px 35px;
-        background-position: right center;
-        background-repeat: no-repeat;
-        border-radius: 4px;
-        color: white;
-        font-family: "Merriweather Sans", sans-serif;
-        font-size: 14px;
-        margin-bottom: 15px;
-        width: 205px;
-        border-bottom: 2px solid transparent;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        box-shadow: 0 4px 2px -2px gray;
-        text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0;
-    }
-
-    button#facebook {
-        border-color: #2d5073;
-        background-color: #3b5998;
-        background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
-    }
-
-    button#twitter {
-        border-color: #007aa6;
-        background-color: #008cbf;
-        background-image: url(https://g.twimg.com/Twitter_logo_white.png);
-    }
-
-    button#googleplus {
-        border-color: #111;
-        background-color: #d10e73;
-        text-shadow: #333 -1px -1px 0;
-        background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png);
-    }
-
-    div.social-wrap button:active {
-        background-color: #222;
-    }
-
-    div.social-wrap.b button {
-        padding-right: 45px;
-        height: 35px;
-        background: none;
-        border: none;
-        display: block;
-        background-size: 25px 25px, cover;
-        background-position: 170px center, center center;
-        background-repeat: no-repeat, repeat;
-        border-radius: 4px;
-        color: white;
-        font-family: "Merriweather Sans", sans-serif;
-        font-size: 14px;
-        margin-bottom: 15px;
-        width: 205px;
-        border-bottom: 2px solid transparent;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        box-shadow: 0 4px 2px -2px gray;
-        text-shadow: rgba(0, 0, 0, 0.4) -1px -1px 0;
-    }
-
-    div.social-wrap.b > .googleplus {
-        background-size: 30px 30px, cover;
-        background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));
-    }
-
-    div.social-wrap.b > .facebook {
-        background: url(http://aroosamanzar.com/uploads/images/facebook-logo-png-white-i6.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
-        background-size: 25px 25px, cover;
-        background-position: 170px center, center center;
-        background-repeat: no-repeat, repeat;
-    }
-
-    div.social-wrap.b > .twitter {
-        background-image: url(https://g.twimg.com/Twitter_logo_white.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));
-    }
-
-    div.social-wrap.b button em {
-        font-size: 18px;
-        letter-spacing: 1px;
-        font-family: "Times New Roman";
-        margin-right: 4px;
-        margin-left: 4px;
-    }
-
-    div.social-wrap.c button {
-        padding-left: 35px;
-        padding-right: 0px;
-        height: 35px;
-        background: none;
-        border: none;
-        display: block;
-        background-size: 25px 25px, cover;
-        background-position: 10px center, center center;
-        background-repeat: no-repeat, repeat;
-        border-radius: 4px;
-        color: white;
-        font-family: "Merriweather Sans", sans-serif;
-        font-size: 14px;
-        margin-bottom: 15px;
-        width: 205px;
-        border-bottom: 2px solid transparent;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        box-shadow: 0 4px 2px -2px gray;
-        text-shadow: rgba(0, 0, 0, 0.4) -1px -1px 0;
-    }
-
-    div.social-wrap.c > .googleplus {
-        background-size: 30px 30px, cover;
-        background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));
-    }
-
-    div.social-wrap.c > .facebook {
-        background: url(http://aroosamanzar.com/uploads/images/facebook-logo-png-white-i6.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
-        background-size: 25px 25px, cover;
-        background-position: 10px center, center center;
-        background-repeat: no-repeat, repeat;
-    }
-
-    div.social-wrap.c > .twitter {
-        background-image: url(https://g.twimg.com/Twitter_logo_white.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));
-    }
-
-    div.social-wrap.c button em {
-        font-size: 18px;
-        letter-spacing: 1px;
-        font-family: "Times New Roman";
-        margin-right: 4px;
-        margin-left: 4px;
-    }
-
-    logins {
-        display: block !important;
-        padding: 10px !important;
-        background: #50BFA4 !important;
-        border: 0 !important;
-        border-radius: 3px !important;
-        font-weight: bold !important;
-        width: 100% !important;
-        color: #fff !important;
-        cursor: pointer !important;
-        -webkit-transition: all 0.3s !important;
-        -moz-transition: all 0.3s !important;
-        transition: all 0.3s !important;
-    }
-
-    ul.sm-wrap {
-        list-style-type: none;
-        padding: 0px;
-    }
-
-        ul.sm-wrap li {
-            font-family: "Helvetica", sans-serif;
-            font-size: 11px;
-            margin-bottom: 10px;
-            padding-left: 20px;
-            background-size: auto 100%;
-            background-repeat: no-repeat;
+        header p {
+            padding-top: 30px;
         }
 
-            ul.sm-wrap li#facebook-sm {
-                background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
-            }
+    .gallery {
+        padding: 40px 0 300px;
+        position: relative;
+        overflow: hidden;
+    }
 
-            ul.sm-wrap li#twitter-sm {
-                background-image: url(https://g.twimg.com/Twitter_logo_blue.png);
-            }
-
-            ul.sm-wrap li#instagram-sm {
-                background-image: url(http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png) !important;
-            }
-
-        ul.sm-wrap a {
-            text-decoration: none;
+        .gallery ul {
+            padding-top: 50px;
+            position: relative;
         }
+
+            .gallery ul li {
+                margin-bottom: 20px;
+                width: 23.24561%;
+                position: relative;
+            }
+
+                .gallery ul li a {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 0;
+                }
+
+                    .gallery ul li a:before {
+                        position: absolute;
+                        width: 32px;
+                        height: 32px;
+                        top: 40%;
+                        left: 50%;
+                        margin: -14px 0 0 -16px;
+                        background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asodipodi%3D%22http%3A//sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A//www.inkscape.org/namespaces/inkscape%22%20inkscape%3Aversion%3D%220.48.4%20r9939%22%20sodipodi%3Adocname%3D%22icon-fullscreen.svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20960%20560%22%0A%09%20enable-background%3D%22new%200%200%20960%20560%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20borderopacity%3D%221%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20objecttolerance%3D%2210%22%20gridtolerance%3D%2210%22%20guidetolerance%3D%2210%22%20showgrid%3D%22false%22%20fit-margin-top%3D%220%22%20fit-margin-left%3D%220%22%20inkscape%3Azoom%3D%227.375%22%20inkscape%3Acx%3D%22-5.1525424%22%20inkscape%3Acy%3D%2216%22%20id%3D%22namedview11%22%20inkscape%3Awindow-x%3D%22-8%22%20inkscape%3Awindow-y%3D%22-8%22%20fit-margin-right%3D%220%22%20inkscape%3Apageopacity%3D%220%22%20fit-margin-bottom%3D%220%22%20inkscape%3Awindow-width%3D%221366%22%20inkscape%3Awindow-height%3D%22706%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Acurrent-layer%3D%22svg2%22%3E%0A%09%3C/sodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22220%22%20y%3D%22260%22%20fill%3D%22%23FFFFFF%22%20width%3D%22536%22%20height%3D%2224%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22476%22%20y%3D%224%22%20fill%3D%22%23FFFFFF%22%20width%3D%2224%22%20height%3D%22556%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A) no-repeat;
+                        content: "";
+                        opacity: 0;
+                        z-index: 1;
+                        -webkit-transition: all 0.3s linear;
+                        -moz-transition: all 0.3s linear;
+                        transition: all 0.3s linear;
+                    }
+
+                    .gallery ul li a:hover:before {
+                        top: 50%;
+                        opacity: 1;
+                    }
+
+                    .gallery ul li a:after {
+                        position: absolute;
+                        width: 100%;
+                        top: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.3);
+                        content: "";
+                        opacity: 0;
+                        -webkit-transition: all 0.3s linear;
+                        -moz-transition: all 0.3s linear;
+                        transition: all 0.3s linear;
+                    }
+
+                    .gallery ul li a:hover:after {
+                        opacity: 1;
+                    }
+
+    .port {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 100px;
+        background: #ffffff;
+        background-color: #fafafa;
+        z-index: 103;
+        visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        border-bottom: 1px solid #d0d0d0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+        .port img {
+            width: 50%;
+        }
+
+        .port .description {
+            float: left !important;
+            width: 50% !important;
+            max-height: 100% !important;
+            padding: 0 40px 40px !important;
+            overflow: auto !important;
+        }
+
+        .port h1 {
+            font-size: 35px;
+            line-height: 2.3;
+            padding: 0;
+        }
+
+        .port > * {
+            opacity: 0;
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+        }
+
+        .port.item_open {
+            visibility: visible;
+            -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .port > * {
+            opacity: 1;
+            -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+    .close {
+        width: 21px;
+        height: 21px;
+        background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
+        position: absolute;
+        right: 10px;
+        top: -121px;
+        opacity: 1;
+        z-index: 1004;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .item_open .close {
+        opacity: 1;
+        top: 0px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .modal:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    .modal:target:before {
+        display: block;
+    }
+
+    .modal:target .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+    }
+
+    .modal-dialog {
+        background: #fefefe;
+        border: #333333 solid 1px;
+        border-radius: 5px;
+        margin-left: -200px;
+        position: fixed;
+        left: 50%;
+        top: -100%;
+        z-index: 11;
+        width: 360px;
+        -webkit-transform: translate(0, -500%);
+        -ms-transform: translate(0, -500%);
+        transform: translate(0, -500%);
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        -moz-transition: -moz-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-header,
+    .modal-footer {
+        padding: 10px 20px;
+    }
+
+    .modal-header {
+        border-bottom: #eeeeee solid 1px;
+    }
+
+        .modal-header h2 {
+            font-size: 20px;
+        }
+
+    .modal-footer {
+        border-top: #eeeeee solid 1px;
+        text-align: right;
+    }
 </style>
 <head>
     <title>E-Commerce Maker - Sign In</title>
 </head>
 <script src="../../Scripts/jquery-1.10.2.js"></script>
-<h1>Parametro 1</h1>
-<h1>{{param}}</h1>
-<h1>Parametro 2</h1>
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+
+<header>
+    <h1>Configuração de fotos <br> <span>[{{nomefb}}]</span></h1>
+    <div style="text-align:center;" class="col-md-12 ">
+        <a href="#"><img src="{{fotourl}}" alt="Perfil" class="img-circle"></a>
+    </div>
+    <p>Clique no botão abaixo</p>
+    <button ng-click="fb()">Carregar Dados</button>
+</header>
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+
+<div id="top"></div>
+<section class="gallery">
+    <div class="row">
+        <ul>
+            <a href="#" class="close"></a>
+            <li id="{{item.id}}" ng-repeat="item in fotos">
+                <a ng-click="mostrafoto(item.id)">
+                    <img ng-src="{{item.link}}" alt="">
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div ng-repeat="item in fotos" id="{{item.id}}" class="port">
+
+        <div class="row">
+            <div class="description">
+                <h1>Item 01</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+            </div>
+
+            <img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1379781/winterletters-jeremiahbritton-dribbble.png" alt="">
+        </div>
+    </div> <!-- / row -->
+
+
+
+
+</section> <!-- / projects -->
+
+<script>
+
+    $('.gallery ul li a').click(function () {
+        debugger;
+        var itemID = $(this).attr('href');
+        $('.gallery ul').addClass('item_open');
+        $(itemID).addClass('item_open');
+        return false;
+    });
+    $('.close').click(function () {
+        $('.port, .gallery ul').removeClass('item_open');
+        return false;
+    });
+
+    $(".gallery ul li a").click(function () {
+        $('html, body').animate({
+            scrollTop: parseInt($("#top").offset().top)
+        }, 400);
+    });
+
+
+</script>

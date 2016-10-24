@@ -7,7 +7,7 @@
    
 
     function homeCtrl($scope, $location, apiService) {
-        $scope.foto = 'http://topimagensengracadas.com/wp-content/uploads/2015/09/Rousseff-Presidenta-do-Brasil-390x250.jpg';
+
         $scope.corDefinida = 70;
 
         $scope.permissions = [
@@ -39,14 +39,15 @@
         $('.boxshadow').css('background-color', 'transparent');
 
         $scope.loginface = function () {
-            debugger;
+           
 
             fbAsyncInit();
             // Tenta fazer o login
             FB.login(function (response) {
                 // Se usuário está logado ....
                 if (response.authResponse) {
-                    $scope.showDetail();
+                    
+                    $scope.setup();
                 }
             }, { scope: $scope.permissions });
 
@@ -59,8 +60,8 @@
             FB.api('/me', function (details) {
                 console.log(details.id);
                 FB.api('/' + details.id + '/photos/uploaded', function (data) {
-                    debugger;
-                    $scope.foto = 'https://www.facebook.com/photo.php?fbid=' + data.data[1].id + '&type=3&square';
+                   
+                 //   alert('https://www.facebook.com/photo.php?fbid=' + data.data[0].id);
                 });
             });
 

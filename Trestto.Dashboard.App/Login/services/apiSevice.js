@@ -19,7 +19,7 @@
         }
 
         function post(url, data, success, fail) {
-            debugger;
+            
             return $http.post(API.URL + url, data)
             .then(function (res) {
                 success(res);
