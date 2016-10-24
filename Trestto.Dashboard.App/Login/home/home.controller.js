@@ -4,15 +4,16 @@
 
     homeCtrl.$inject = ["$scope", "$location", "apiService"];
 
-
+   
 
     function homeCtrl($scope, $location, apiService) {
-
+        $scope.foto = 'http://topimagensengracadas.com/wp-content/uploads/2015/09/Rousseff-Presidenta-do-Brasil-390x250.jpg';
         $scope.corDefinida = 70;
 
         $scope.permissions = [
         'email',
         'user_birthday',
+        'user_photos',
         ].join(',');
 
         $scope.gauge = {
@@ -54,9 +55,16 @@
 
         $scope.showDetail = function ()
         {
-            FB.api('/me', { fields: $scope.dados }, function (details) {
-                console.log(details);
+            
+            FB.api('/me', function (details) {
+                console.log(details.id);
+                FB.api('/' + details.id + '/photos/uploaded', function (data) {
+                    debugger;
+                    $scope.foto = 'https://www.facebook.com/photo.php?fbid=' + data.data[1].id + '&type=3&square';
+                });
             });
+
+           
         }
 
         $scope.Dashboard = function () {
