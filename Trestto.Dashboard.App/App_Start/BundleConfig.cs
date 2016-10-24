@@ -35,10 +35,10 @@ namespace Trestto.Dashboard.App
            ));
 
 
-            bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
-                "~/Scripts/Angular/jquery-3.1.1.min.js",
+            bundles.Add(new ScriptBundle("~/bundles/vendor").Include( 
+                      "~/Scripts/jquery.easyModal.js",
                  "~/Scripts/Angular/angular.min.js",
-                 "~/Scripts/Angular/izipie.js",
+                 "~/Scripts/Angular/izipie.js", 
                  "~/Scripts/Angular/angular.easypiechart.min.js",
                  "~/Scripts/Angular/jquery.easypiechart.fill.js",
                  "~/Scripts/Angular/ngRoute.js",
