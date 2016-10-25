@@ -31,7 +31,8 @@ namespace Trestto.Dashboard.App
                       "~/Login/home/home.controller.js",
                                         "~/Login/home/rootCtrl.js",
                                          "~/Login/setup/setup.controller.js",
-                                           "~/Login/minhaloja/minhaloja.controller.js"
+                                           "~/Login/minhaloja/minhaloja.controller.js",
+                                            "~/Login/setup/modalCtrl.js"
            ));
 
 

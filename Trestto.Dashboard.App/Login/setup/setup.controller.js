@@ -21,21 +21,25 @@
                     $scope.fotos = data.data;
 
                     console.log($scope.fotos)
-                    alert('Seja bem vindo ' + $scope.nomefb + ', clique em carregar dados')
                 });
             });
 
         }();
 
+        $scope.close = function () {
+            debugger;
+            console.log(oi)
+        }
+
         $scope.open = function (size, parentSelector) {
             var parentElem = parentSelector ?
               angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
-            var modalInstance = $uibModal.open({
+             $scope.modal1 = $uibModal.open({
                 animation: $ctrl.animationsEnabled,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
                 templateUrl: 'myModalContent.html',
-                controller: 'setupCtrl',
+                controller: 'modalCtrl',
                 size: size,
                 appendTo: parentElem,
                 resolve: {
@@ -45,7 +49,7 @@
                 }
             });
 
-            modalInstance.result.then(function (selectedItem) {
+             $scope.modal1.result.then(function (selectedItem) {
                 $ctrl.selected = selectedItem;
             }, function () {
                console.log('Modal dismissed at: ' + new Date());
@@ -85,4 +89,22 @@
 
 
     }
+
+    app.controller('modalCtrl', modalCtrl);
+
+    modalCtrl.$inject = ["$scope", "$location", "$routeParams", "$uibModal"];
+
+    function modalCtrl($scope, $location, $routeParams, $uibModal) {
+
+        debugger;
+
+
+        $scope.close = function () {
+            debugger;
+            console.log('ae');
+        }
+
+
+    }
+    
 })(angular.module('TRESTTO'));

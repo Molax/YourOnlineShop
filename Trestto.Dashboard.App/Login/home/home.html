@@ -435,10 +435,16 @@
             });
             FB.AppEvents.logPageView();
             FB.Event.subscribe('auth.login', function (response) {
-                window.location.href = "#/setup";
+                if (response.status == "connected") {
+                    window.location.href = "#/setup";
+                }
+                else {
+                    window.location.reload();
+                }
             });
-            FB.Event.subscribe('auth.logout', function (response) {
-                window.location.reload();
+            FB.Event.unsubscribe('auth.logout', function (response) {
+                debugger;
+                //window.location.reload();
             });
         };
 

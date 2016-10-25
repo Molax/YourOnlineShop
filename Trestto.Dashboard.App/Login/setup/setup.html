@@ -136,151 +136,6 @@
                     .gallery ul li a:hover:after {
                         opacity: 1;
                     }
-
-    .port {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        padding-top: 100px;
-        background: #ffffff;
-        background-color: #fafafa;
-        z-index: 103;
-        visibility: hidden;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-        border-bottom: 1px solid #d0d0d0;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-    }
-
-        .port img {
-            width: 50%;
-        }
-
-        .port .description {
-            float: left !important;
-            width: 50% !important;
-            max-height: 100% !important;
-            padding: 0 40px 40px !important;
-            overflow: auto !important;
-        }
-
-        .port h1 {
-            font-size: 35px;
-            line-height: 2.3;
-            padding: 0;
-        }
-
-        .port > * {
-            opacity: 0;
-            -webkit-transition: all 0.5s linear;
-            -moz-transition: all 0.5s linear;
-            transition: all 0.5s linear;
-        }
-
-        .port.item_open {
-            visibility: visible;
-            -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-            -webkit-transition: all 0.4s ease-in-out;
-            -moz-transition: all 0.4s ease-in-out;
-            transition: all 0.4s ease-in-out;
-        }
-
-        .port > * {
-            opacity: 1;
-            -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
-        }
-
-    .close {
-        width: 21px;
-        height: 21px;
-        background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
-        position: absolute;
-        right: 10px;
-        top: -121px;
-        opacity: 1;
-        z-index: 1004;
-        -webkit-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
-    }
-
-    .item_open .close {
-        opacity: 1;
-        top: 0px;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .modal:before {
-        content: "";
-        display: none;
-        background: rgba(0, 0, 0, 0.6);
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
-    }
-
-    .modal:target:before {
-        display: block;
-    }
-
-    .modal:target .modal-dialog {
-        -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
-        top: 20%;
-    }
-
-    .modal-dialog {
-        background: #fefefe;
-        border: #333333 solid 1px;
-        border-radius: 5px;
-        margin-left: -200px;
-        position: fixed;
-        left: 50%;
-        top: -100%;
-        z-index: 11;
-        width: 360px;
-        -webkit-transform: translate(0, -500%);
-        -ms-transform: translate(0, -500%);
-        transform: translate(0, -500%);
-        -webkit-transition: -webkit-transform 0.3s ease-out;
-        -moz-transition: -moz-transform 0.3s ease-out;
-        -o-transition: -o-transform 0.3s ease-out;
-        transition: transform 0.3s ease-out;
-    }
-
-    .modal-body {
-        padding: 20px;
-    }
-
-    .modal-header,
-    .modal-footer {
-        padding: 10px 20px;
-    }
-
-    .modal-header {
-        border-bottom: #eeeeee solid 1px;
-    }
-
-        .modal-header h2 {
-            font-size: 20px;
-        }
-
-    .modal-footer {
-        border-top: #eeeeee solid 1px;
-        text-align: right;
-    }
 </style>
 <head>
     <title>E-Commerce Maker - Sign In</title>
@@ -297,7 +152,21 @@
         <a href="#"><img src="{{fotourl}}" alt="Perfil" class="img-circle"></a>
     </div>
     <p>Clique no botão abaixo</p>
-    <button ng-click="fb()">Carregar Dados</button>
+    <button class="form-group btn btn-default" ng-click="fb()">Carregar Dados</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Selecione um nome para a página</p>
+        </div>
+        <div class="col-lg-12">
+            <input type="text" style="color : #000000;" class="form-group" />
+        </div>
+        <div class="col-lg-12">
+            <p>Selecione as fotos desejadas abaixo e clique em "Gerar Página"</p>
+        </div>
+        <div class="col-lg-12">
+            <button class="form-group btn btn-default" ng-click="fb()">Gerar Página</button>
+        </div>
+    </div>
 </header>
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -311,24 +180,14 @@
             <a href="#" class="close"></a>
             <li id="{{item.id}}" ng-repeat="item in fotos">
                 <div ng-click="mostrafoto(item)">
-                    <img style="width: 300px !important; height:300px !important;"  ng-src="{{item.images[1].source}}" alt="">
+                    <img style="width: 300px !important; height:300px !important;" ng-src="{{item.images[1].source}}" alt="">
                 </div>
             </li>
 
         </ul>
     </div>
 
-    <div ng-repeat="item in fotos" id="{{item.id}}" class="port">
 
-        <div class="row">
-            <div class="description">
-                <h1>Item 01</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-            </div>
-
-            <img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1379781/winterletters-jeremiahbritton-dribbble.png" alt="">
-        </div>
-    </div> <!-- / row -->
 
 
 
@@ -366,12 +225,19 @@
             <h3 class="modal-title" id="modal-title">Opções</h3>
         </div>
         <div class="modal-body" id="modal-body">
-            <h5>{{comentario}}</h5>
-            <img style="max-width: 30%;" ng-src="{{link}}" />
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" data-dismiss="myModalContent.html">OK</button>
-            <button class="btn btn-warning" type="button" data-dismiss="myModalContent.html">Cancel</button>
+            <div class="row">
+                <div class="col-lg-12">
+                    <input type="text" class="form-group" value="{{comentario}}" />
+                </div>
+                <div style="margin-bottom : 20px;" class="col-lg-12">
+                    <img style="max-width: 30%;" ng-src="{{link}}" />
+                </div>
+            </div>
+            <div ng-controller="modalCtrl" ng-class="modal-footer">
+                <input type="checkbox" /> <label>Tornar essa foto pública?</label>
+                <button class="btn btn-primary" type="button" data-dismiss="myModalContent.html">OK</button>
+                <button class="btn btn-warning" type="button" ng-click="$dismiss()">Cancel</button>
+            </div>
         </div>
     </div>
 </script>

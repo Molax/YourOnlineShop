@@ -244,6 +244,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\atendente_Logo.png" />
+    <Content Include="Login\setup\modalCtrl.js" />
     <Content Include="Login\setup\setup.controller.js" />
     <Content Include="Login\setup\setup.html" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
