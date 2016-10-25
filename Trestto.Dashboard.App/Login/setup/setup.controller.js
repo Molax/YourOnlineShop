@@ -10,13 +10,14 @@
         $scope.nomefb = {};
         $scope.fotourl = {};
 
+        $scope.comentario = {};
 
         $scope.fb = function () {
 
             FB.api('/me', function (details) {
                 $scope.fotourl = 'https://graph.facebook.com/' + details.id + '/picture';
                 $scope.nomefb = details.name;
-                FB.api('/' + details.id + '/photos/uploaded?fields=link', function (data) {
+                FB.api('/' + details.id + '/photos/uploaded?fields=images,name', function (data) {
                     $scope.fotos = data.data;
 
                     console.log($scope.fotos)
@@ -47,22 +48,22 @@
             modalInstance.result.then(function (selectedItem) {
                 $ctrl.selected = selectedItem;
             }, function () {
-                $log.info('Modal dismissed at: ' + new Date());
+               console.log('Modal dismissed at: ' + new Date());
             });
         };
 
         $scope.link = {};
 
-        $scope.mostrafoto = function (link) { 
+        $scope.mostrafoto = function (item) { 
             
-            $scope.link = link;
             var modalInstance = $uibModal.open({
                 animation: true,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
                 templateUrl: 'myModalContent.html',
-                controller: function($scope) {
-                    $scope.link = link;  
+                controller: function ($scope) {
+                    $scope.comentario = item.name;
+                    $scope.link = item.images[3].source;
                 },
                 size: 'lg', 
                 resolve: {
