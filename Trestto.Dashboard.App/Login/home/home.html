@@ -377,10 +377,9 @@
         cursor: pointer!important;
         -webkit-transition: all 0.3s !important;
         -moz-transition: all 0.3s !important;
-        transition: all 0.3s !important;" class="logins" id="facebook" ng-click="loginface()">
+        transition: all 0.3s !important;" class="logins fb-login-button"  data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"">
             Sign up with Facebook
         </button>
-
 
         <button style="display: block ;
         padding: 10px !important;
@@ -436,7 +435,7 @@
             });
             FB.AppEvents.logPageView();
             FB.Event.subscribe('auth.login', function (response) {
-                window.location.reload();
+                window.location.href = "#/setup";
             });
             FB.Event.subscribe('auth.logout', function (response) {
                 window.location.reload();
