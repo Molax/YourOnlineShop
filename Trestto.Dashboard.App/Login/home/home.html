@@ -377,7 +377,7 @@
         cursor: pointer!important;
         -webkit-transition: all 0.3s !important;
         -moz-transition: all 0.3s !important;
-        transition: all 0.3s !important;" class="logins fb-login-button"  data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"">
+        transition: all 0.3s !important;" ng-click="click()" class="logins fb-login-button"  data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"">
             Sign up with Facebook
         </button>
 
@@ -437,13 +437,14 @@
             FB.Event.subscribe('auth.login', function (response) {
                 if (response.status == "connected") {
                     window.location.href = "#/setup";
+                    
                 }
                 else {
                     window.location.reload();
                 }
             });
             FB.Event.unsubscribe('auth.logout', function (response) {
-                debugger;
+                
                 //window.location.reload();
             });
         };

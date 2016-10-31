@@ -2,36 +2,46 @@
 (function (app) {
     app.controller('setupCtrl', setupCtrl);
 
-    setupCtrl.$inject = ["$scope", "$location", "$routeParams", "$uibModal"];
+    setupCtrl.$inject = ["$scope", "$location", "$routeParams", "$uibModal", "$rootScope", "apiService"];
 
-    function setupCtrl($scope, $location, $routeParams, $uibModal) {
+    function setupCtrl($scope, $location, $routeParams, $uibModal, $rootScope,apiService) {
 
-        $scope.fotos = [];
-        $scope.nomefb = {};
-        $scope.fotourl = {};
+        $rootScope.fotos = [];
+        $rootScope.nomefb = {};
+        $rootScope.fotourl = {};
+        $rootScope.selectedID = 0;
+        $rootScope.edit = 'nao';
 
         $scope.comentario = {};
 
         $scope.fb = function () {
 
             FB.api('/me', function (details) {
-                $scope.fotourl = 'https://graph.facebook.com/' + details.id + '/picture';
-                $scope.nomefb = details.name;
+                $rootScope.fotourl = 'https://graph.facebook.com/' + details.id + '/picture';
+                $rootScope.nomefb = details.name;
+                $rootScope.id = details.id;
                 FB.api('/' + details.id + '/photos/uploaded?fields=images,name', function (data) {
-                    $scope.fotos = data.data;
-
-                    console.log($scope.fotos)
+                    $rootScope.fotos = data.data;
+                    for (var i = 0; i < $rootScope.fotos.length; i++) {
+                        $rootScope.fotos[i].aparece = true;
+                    }
+                    console.log($rootScope.fotos)
                 });
             });
 
         }();
 
         $scope.close = function () {
-            debugger;
+            
             console.log(oi)
         }
 
+        $scope.acc = function () {
+            $rootScope.fotos = $rootScope.fotos;
+        }
+
         $scope.open = function (size, parentSelector) {
+            $rootScope.edit = 'sim';
             var parentElem = parentSelector ?
               angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
              $scope.modal1 = $uibModal.open({
@@ -56,18 +66,49 @@
             });
         };
 
+        $scope.retornaDado = function () {
+            for (var i = 0; i < $rootScope.fotos.length; i++) {
+                $rootScope.fotos[i].foto = $rootScope.fotos[i].images[0].source;
+                $rootScope.fotos[i].idloja = $rootScope.id;
+                $rootScope.fotos[i].nomeloja = $scope.nomeloja;
+                $rootScope.fotos[i].nomepessoa = $rootScope.nomefb;
+                $rootScope.fotos[i].fotoperfil = $rootScope.fotourl;
+            }
+            apiService.post("Dash/RetornaDado", $rootScope.fotos, successAtualizaPainelHoraHora, errorAtualizaPainelHoraHora);
+
+            function successAtualizaPainelHoraHora(res,obj) {
+                
+                console.log(obj);
+                console.log(res)
+
+            }
+
+            function errorAtualizaPainelHoraHora(res) {
+
+            }
+        }
+
         $scope.link = {};
 
-        $scope.mostrafoto = function (item) { 
-            
+        $scope.pegacomentario = function (coment)
+        {
+            console.log(coment);
+        }
+
+        $scope.mostrafoto = function (item) {
+           
+            $rootScope.selectedID = item.id;
+            console.log($rootScope.selectedID);
+
             var modalInstance = $uibModal.open({
                 animation: true,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
                 templateUrl: 'myModalContent.html',
-                controller: function ($scope) {
-                    $scope.comentario = item.name;
-                    $scope.link = item.images[3].source;
+                controller: function ($rootScope) {
+                    $rootScope.comentario = item.name;
+                    $rootScope.link = item.images[3].source;
+                    $rootScope.aparece = item.aparece;
                 },
                 size: 'lg', 
                 resolve: {
@@ -77,31 +118,33 @@
                 }
             });
 
-            modalInstance.result.then(function (selectedItem) {
+            modalInstance.result.then(function () {
               
             }, function () {
+
+                if ( $rootScope.edit == 'sim') {
+                    for (var i = 0; i < $rootScope.fotos.length; i++) {
+
+                        if ($rootScope.fotos[i].id == $rootScope.selectedID) {
+
+                            $rootScope.fotos[i].name = $rootScope.comentario;
+                            $rootScope.fotos[i].aparece = $rootScope.aparece;
+                            break;
+                        }
+
+                    }
+                }
+                
+
+
+                console.log($rootScope.comentario);
+                console.log($rootScope.selectedID);
+                console.log($rootScope.aparece);
                 
             });
 
 
 
-        }
-
-
-    }
-
-    app.controller('modalCtrl', modalCtrl);
-
-    modalCtrl.$inject = ["$scope", "$location", "$routeParams", "$uibModal"];
-
-    function modalCtrl($scope, $location, $routeParams, $uibModal) {
-
-        debugger;
-
-
-        $scope.close = function () {
-            debugger;
-            console.log('ae');
         }
 
 

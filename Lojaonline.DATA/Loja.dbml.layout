@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Loja">
+  <DataContextMoniker Name="/LojaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a4200c7e-db12-4bbd-b678-8bd6ea12a1b6" absoluteBounds="6.5, 1, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LojaDataContext/Table" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ef6d3bd-70a4-4c9e-9b90-f01239010d5f" absoluteBounds="6.515, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c70a629-ab89-4e89-a222-f3fd00adfa57" absoluteBounds="4.75, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LojaDataContext/Click" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a5cc3a7-4e06-45af-8145-288c4aa1ea0b" absoluteBounds="4.765, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="078c4d17-d651-4223-b016-cb13ac068c7d" absoluteBounds="4.375, 1.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LojaDataContext/Quest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b23c9845-3744-47f3-9a60-695c24508710" absoluteBounds="4.39, 1.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

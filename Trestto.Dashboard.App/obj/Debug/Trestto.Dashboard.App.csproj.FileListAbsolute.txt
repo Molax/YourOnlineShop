@@ -444,3 +444,5 @@ C:\Users\Johny\projetos\YourOnlineShop\Trestto.Dashboard.App\bin\Microsoft.Owin.
 C:\Users\Johny\projetos\YourOnlineShop\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.csprojResolveAssemblyReference.cache
 C:\Users\Johny\projetos\YourOnlineShop\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.dll
 C:\Users\Johny\projetos\YourOnlineShop\Trestto.Dashboard.App\obj\Debug\Trestto.Dashboard.App.pdb
+E:\GitLab\YourOnlineShop\Trestto.Dashboard.App\bin\Lojaonline.DATA.dll
+E:\GitLab\YourOnlineShop\Trestto.Dashboard.App\bin\Lojaonline.DATA.pdb

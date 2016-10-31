@@ -24,6 +24,14 @@
                  templateUrl: "Login/minhaloja/minhaloja.html",
                  controller: "minhalojaCtrl"
              })
+            .when("/dashboard", {
+                templateUrl: "Login/Dashboard/Dashboard.html",
+                controller: "dashCtrl"
+            })
+            .when("/dashboard/:userId", {
+                templateUrl: "Login/Dashboard/Dashboard.html",
+                controller: "dashCtrl"
+            })
             .when("/setup/:userId", {
                 templateUrl: "Login/setup/setup.html",
                 controller: "setupCtrl"

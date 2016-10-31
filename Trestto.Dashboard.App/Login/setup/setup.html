@@ -151,21 +151,20 @@
     <div style="text-align:center;" class="col-md-12 ">
         <a href="#"><img src="{{fotourl}}" alt="Perfil" class="img-circle"></a>
     </div>
-    <p>Clique no botão abaixo</p>
-    <button class="form-group btn btn-default" ng-click="fb()">Carregar Dados</button>
     <div class="row">
         <div class="col-lg-12">
             <p>Selecione um nome para a página</p>
         </div>
         <div class="col-lg-12">
-            <input type="text" style="color : #000000;" class="form-group" />
+            <input type="text"  ng-model="nomeloja" style="color : #000000;" class="form-group" />
         </div>
         <div class="col-lg-12">
             <p>Selecione as fotos desejadas abaixo e clique em "Gerar Página"</p>
         </div>
         <div class="col-lg-12">
-            <button class="form-group btn btn-default" ng-click="fb()">Gerar Página</button>
+            <button class="form-group btn btn-default" ng-click="retornaDado()">Gerar Página</button>
         </div>
+        <button class="btn" id="carrega" ng-click="acc()">aeaeaeaeaeaeaeae</button>
     </div>
 </header>
 
@@ -215,6 +214,15 @@
     });
 
 
+    $(document).ready(function () {
+        $('#carrega').hide();
+        setTimeout(function () {
+            $('#carrega').click();
+        }, 4000);
+       
+    });
+  
+
 </script>
 
 
@@ -227,16 +235,16 @@
         <div class="modal-body" id="modal-body">
             <div class="row">
                 <div class="col-lg-12">
-                    <input type="text" class="form-group" value="{{comentario}}" />
+                    <input ng-change="pegacomentario(comentario);" type="text" style="text-align:center;" class="form-group col-lg-12" ng-model="comentario" />
                 </div>
                 <div style="margin-bottom : 20px;" class="col-lg-12">
                     <img style="max-width: 30%;" ng-src="{{link}}" />
                 </div>
             </div>
             <div ng-controller="modalCtrl" ng-class="modal-footer">
-                <input type="checkbox" /> <label>Tornar essa foto pública?</label>
-                <button class="btn btn-primary" type="button" data-dismiss="myModalContent.html">OK</button>
-                <button class="btn btn-warning" type="button" ng-click="$dismiss()">Cancel</button>
+                <input ng-model="aparece" type="checkbox" /> <label>Tornar essa foto pública?</label>
+                <button class="btn btn-primary" type="button" ng-click="ok(comentario,aparece); $dismiss()" >OK</button>
+                <button class="btn btn-warning" type="button" ng-click="not(); $dismiss()">Cancel</button>
             </div>
         </div>
     </div>
