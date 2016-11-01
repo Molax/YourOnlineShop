@@ -227,6 +227,7 @@
     <Compile Include="Models\AlbumFotos.cs" />
     <Compile Include="Models\Click.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Laura.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\param.cs" />
     <Compile Include="Models\Quest.cs" />

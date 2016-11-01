@@ -21,7 +21,7 @@ namespace Trestto.Dashboard.App.Controllers
                 foreach (var item in fotos)
                 {
                     var foto = db.Tables.Where(f => f.ID_FOTO == item.id).ToList();
-                    
+
                     if (foto.Count > 0)
                     {
                         foto.First().APARECE = item.aparece;
@@ -37,7 +37,8 @@ namespace Trestto.Dashboard.App.Controllers
 
                     else
                     {
-                        var dbFoto = new Lojaonline.DATA.Table {
+                        var dbFoto = new Lojaonline.DATA.Table
+                        {
                             APARECE = item.aparece,
                             FOTO_PERFIL = item.fotoperfil,
                             ID_LOJA = item.idloja,
@@ -71,7 +72,8 @@ namespace Trestto.Dashboard.App.Controllers
 
                 foreach (var item in fotos)
                 {
-                    rFotos.Add(new Models.AlbumFotos {
+                    rFotos.Add(new Models.AlbumFotos
+                    {
                         aparece = item.APARECE,
                         foto = item.FOTO_URL,
                         fotoperfil = item.FOTO_PERFIL,
@@ -94,7 +96,8 @@ namespace Trestto.Dashboard.App.Controllers
 
             using (var db = new LojaDataContext())
             {
-                var dataClick = new Lojaonline.DATA.Click {
+                var dataClick = new Lojaonline.DATA.Click
+                {
                     DATA = DateTime.Now,
                     ID_LOJA = click.idLoja,
                     ID_FOTO = click.idFoto
@@ -131,5 +134,29 @@ namespace Trestto.Dashboard.App.Controllers
 
             return Json("");
         }
+
+
+        [HttpPost]
+        public JsonResult VerificaDash(Models.Laura laura)
+        {
+            string tem = "";
+            using (var db = new LojaDataContext())
+            {
+
+
+                var loja = db.Tables.Where(d => d.NOME_LOJA == laura.loja).ToList();
+                if (loja.Count() > 0)
+                {
+                    tem = loja.First().FOTO_PERFIL;
+                }
+                else {
+                    tem = "";
+                }
+
+            }
+
+            return Json(tem);
+        }
+
     }
 }
