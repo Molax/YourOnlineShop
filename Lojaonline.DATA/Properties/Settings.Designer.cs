@@ -32,5 +32,15 @@ namespace Lojaonline.DATA.Properties {
                 return ((string)(this["LojaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ATIVO216\\SQLEXPRESS;Initial Catalog=Loja;Integrated Security=True")]
+        public string LojaConnectionString1 {
+            get {
+                return ((string)(this["LojaConnectionString1"]));
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web.Mvc;
 using Lojaonline.DATA;
+using System.Diagnostics;
 
 namespace Trestto.Dashboard.App.Controllers
 {
@@ -90,6 +91,94 @@ namespace Trestto.Dashboard.App.Controllers
             return Json(rFotos);
         }
 
+
+
+        [HttpPost]
+        public JsonResult GeraCsvClick(Models.Laura param)
+        {
+            List<Models.Click> rClick = new List<Models.Click>();
+            using (var db = new LojaDataContext())
+            {
+                var idLoja = db.Tables.Where(f => f.NOME_LOJA == param.loja).First().ID_LOJA;
+
+                var clicks = db.Clicks.Where(c => c.ID_LOJA == idLoja).ToList();
+                foreach (var item in clicks)
+                {
+                    rClick.Add(new Models.Click {
+                        data = item.DATA,
+                        idClick = item.ID_CLICK,
+                        idFoto = item.ID_FOTO,
+                        idLoja = item.ID_LOJA
+                    });
+                }
+
+                var path = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName());
+
+                string pathCsv = path + "\\ArquivoClick.csv";
+
+
+                List<string> output = new List<string>();
+
+                foreach (var item in rClick)
+                {
+                    output.Add(item.idClick.ToString() + ", " + item.idFoto + "," + item.idLoja +","+ item.data.ToString() );
+                }
+
+                System.IO.File.WriteAllLines(pathCsv, output.ToArray());
+
+                Process.Start(pathCsv);
+
+            }
+
+            return Json(rClick);
+        }
+
+
+        [HttpPost]
+        public JsonResult GeraCsvReact(Models.Laura param)
+        {
+            List<Models.Quest> rClick = new List<Models.Quest>();
+            using (var db = new LojaDataContext())
+            {
+                var idLoja = db.Tables.Where(f => f.NOME_LOJA == param.loja).First().ID_LOJA;
+
+                var quests = db.Quests.Where(c => c.ID_LOJA == idLoja).ToList();
+
+                foreach (var item in quests)
+                {
+                    rClick.Add(new Models.Quest
+                    {
+                        data = item.DATA,
+                        id = item.ID_QUEST.ToString(),
+                        like = item.LIKE,
+                        opt = item.OPTION,
+                        react = item.REACT,
+                        idFoto = item.ID_FOTO,
+                        idLoja = item.ID_LOJA
+                    });
+                }
+
+                var path = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName());
+
+                string pathCsv = path + "\\ArquivoReact.csv";
+
+
+                List<string> output = new List<string>();
+
+                foreach (var item in rClick)
+                {
+                    output.Add(item.id + ", " + item.data + "," + item.idFoto + "," + item.idLoja + "," + item.like + "," + item.opt + ","+ item.react);
+                }
+
+                System.IO.File.WriteAllLines(pathCsv, output.ToArray());
+
+                Process.Start(pathCsv);
+
+            }
+
+            return Json(rClick);
+        }
+
         [HttpPost]
         public JsonResult SalvaClick(Models.Click click)
         {
@@ -139,23 +228,40 @@ namespace Trestto.Dashboard.App.Controllers
         [HttpPost]
         public JsonResult VerificaDash(Models.Laura laura)
         {
-            string tem = "";
+            Models.Relatorio relatorio = new Models.Relatorio();
+
+            string idLoja = "";
             using (var db = new LojaDataContext())
             {
 
-
-                var loja = db.Tables.Where(d => d.NOME_LOJA == laura.loja).ToList();
-                if (loja.Count() > 0)
+                try
                 {
-                    tem = loja.First().FOTO_PERFIL;
+                     idLoja = db.Tables.Where(d => d.NOME_LOJA == laura.loja).First().ID_LOJA;
+                }
+                catch (Exception)
+                {
+
+                    idLoja = "";
+                }
+                
+
+                if (idLoja != "")
+                {
+                    var clicks = db.Clicks.Where(c => c.ID_LOJA == idLoja).ToList();
+                    var likes = db.Quests.Where(l => l.ID_LOJA == idLoja && l.LIKE == "2").ToList();
+                    var reacts = db.Quests.Where(l => l.ID_LOJA == idLoja && l.REACT == "love").ToList();
+                    var options = db.Quests.Where(l => l.ID_LOJA == idLoja && l.OPTION == "1").ToList();
+                    relatorio.clicks = clicks.Count();
+                    relatorio.like = likes.Count();
+                    relatorio.react = reacts.Count();
+                    relatorio.option = options.Count();
                 }
                 else {
-                    tem = "";
                 }
 
             }
 
-            return Json(tem);
+            return Json(relatorio);
         }
 
     }

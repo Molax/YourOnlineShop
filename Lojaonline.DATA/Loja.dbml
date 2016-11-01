@@ -1,18 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Loja" Class="LojaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=Loja;Integrated Security=True" SettingsObjectName="Lojaonline.DATA.Properties.Settings" SettingsPropertyName="LojaConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.[Table]" Member="Tables">
-    <Type Name="Table">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ID_FOTO" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="APARECE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="NAME" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="FOTO_URL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="ID_LOJA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="NOME_LOJA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="NOME_PESSOA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="FOTO_PERFIL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-    </Type>
-  </Table>
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ATIVO216\SQLEXPRESS;Initial Catalog=Loja;Integrated Security=True" SettingsObjectName="Lojaonline.DATA.Properties.Settings" SettingsPropertyName="LojaConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Click" Member="Clicks">
     <Type Name="Click">
       <Column Name="ID_CLICK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -24,12 +11,25 @@
   <Table Name="dbo.Quest" Member="Quests">
     <Type Name="Quest">
       <Column Name="ID_QUEST" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ID_LOJA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ID_FOTO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_LOJA" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ID_FOTO" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Column Name="DATA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="[OPTION]" Member="OPTION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="[LIKE]" Member="LIKE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="REACT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Table]" Member="Tables">
+    <Type Name="Table">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_FOTO" Type="System.String" DbType="NVarChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="APARECE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAME" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="FOTO_URL" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ID_LOJA" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NOME_LOJA" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NOME_PESSOA" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="FOTO_PERFIL" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

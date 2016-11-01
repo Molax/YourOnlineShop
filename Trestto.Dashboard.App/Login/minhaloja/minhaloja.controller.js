@@ -72,7 +72,7 @@
             modalInstance.result.then(function () {
 
             }, function () {
-                debugger;
+                
                 if ($rootScope.edit == 'sim') {
                     for (var i = 0; i < $rootScope.fotos.length; i++) {
 
@@ -88,7 +88,7 @@
                 }
 
                 else {
-                    debugger;
+                    
                     $rootScope.questionario.opt = $('#sel1').val();
 
                     $rootScope.questionario.idLoja = $rootScope.click.idLoja;

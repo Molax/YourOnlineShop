@@ -3,3 +3,4 @@ E:\GitLab\YourOnlineShop\Lojaonline.DATA\bin\Debug\Lojaonline.DATA.dll
 E:\GitLab\YourOnlineShop\Lojaonline.DATA\bin\Debug\Lojaonline.DATA.pdb
 E:\GitLab\YourOnlineShop\Lojaonline.DATA\obj\Debug\Lojaonline.DATA.dll
 E:\GitLab\YourOnlineShop\Lojaonline.DATA\obj\Debug\Lojaonline.DATA.pdb
+E:\GitLab\YourOnlineShop\Lojaonline.DATA\obj\Debug\Lojaonline.DATA.csprojResolveAssemblyReference.cache

@@ -11,7 +11,8 @@ namespace Trestto.Dashboard.App.Models
 
         public string idFoto { get; set; }
 
-        public DateTime data { get; set; }
+        public DateTime? data { get; set; }
 
+        public int idClick { get; set; }
     }
 }

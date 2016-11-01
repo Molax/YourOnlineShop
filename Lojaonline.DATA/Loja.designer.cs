@@ -30,19 +30,19 @@ namespace Lojaonline.DATA
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertTable(Table instance);
-    partial void UpdateTable(Table instance);
-    partial void DeleteTable(Table instance);
     partial void InsertClick(Click instance);
     partial void UpdateClick(Click instance);
     partial void DeleteClick(Click instance);
     partial void InsertQuest(Quest instance);
     partial void UpdateQuest(Quest instance);
     partial void DeleteQuest(Quest instance);
+    partial void InsertTable(Table instance);
+    partial void UpdateTable(Table instance);
+    partial void DeleteTable(Table instance);
     #endregion
 		
 		public LojaDataContext() : 
-				base(global::Lojaonline.DATA.Properties.Settings.Default.LojaConnectionString, mappingSource)
+				base(global::Lojaonline.DATA.Properties.Settings.Default.LojaConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -71,14 +71,6 @@ namespace Lojaonline.DATA
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Table> Tables
-		{
-			get
-			{
-				return this.GetTable<Table>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Click> Clicks
 		{
 			get
@@ -94,258 +86,12 @@ namespace Lojaonline.DATA
 				return this.GetTable<Quest>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[Table]")]
-	public partial class Table : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ID;
-		
-		private string _ID_FOTO;
-		
-		private string _APARECE;
-		
-		private string _NAME;
-		
-		private string _FOTO_URL;
-		
-		private string _ID_LOJA;
-		
-		private string _NOME_LOJA;
-		
-		private string _NOME_PESSOA;
-		
-		private string _FOTO_PERFIL;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
-    partial void OnID_FOTOChanging(string value);
-    partial void OnID_FOTOChanged();
-    partial void OnAPARECEChanging(string value);
-    partial void OnAPARECEChanged();
-    partial void OnNAMEChanging(string value);
-    partial void OnNAMEChanged();
-    partial void OnFOTO_URLChanging(string value);
-    partial void OnFOTO_URLChanged();
-    partial void OnID_LOJAChanging(string value);
-    partial void OnID_LOJAChanged();
-    partial void OnNOME_LOJAChanging(string value);
-    partial void OnNOME_LOJAChanged();
-    partial void OnNOME_PESSOAChanging(string value);
-    partial void OnNOME_PESSOAChanged();
-    partial void OnFOTO_PERFILChanging(string value);
-    partial void OnFOTO_PERFILChanged();
-    #endregion
-		
-		public Table()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int ID
+		public System.Data.Linq.Table<Table> Tables
 		{
 			get
 			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this.OnIDChanging(value);
-					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_FOTO", DbType="VarChar(MAX)")]
-		public string ID_FOTO
-		{
-			get
-			{
-				return this._ID_FOTO;
-			}
-			set
-			{
-				if ((this._ID_FOTO != value))
-				{
-					this.OnID_FOTOChanging(value);
-					this.SendPropertyChanging();
-					this._ID_FOTO = value;
-					this.SendPropertyChanged("ID_FOTO");
-					this.OnID_FOTOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APARECE", DbType="VarChar(50)")]
-		public string APARECE
-		{
-			get
-			{
-				return this._APARECE;
-			}
-			set
-			{
-				if ((this._APARECE != value))
-				{
-					this.OnAPARECEChanging(value);
-					this.SendPropertyChanging();
-					this._APARECE = value;
-					this.SendPropertyChanged("APARECE");
-					this.OnAPARECEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NAME", DbType="VarChar(MAX)")]
-		public string NAME
-		{
-			get
-			{
-				return this._NAME;
-			}
-			set
-			{
-				if ((this._NAME != value))
-				{
-					this.OnNAMEChanging(value);
-					this.SendPropertyChanging();
-					this._NAME = value;
-					this.SendPropertyChanged("NAME");
-					this.OnNAMEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOTO_URL", DbType="VarChar(MAX)")]
-		public string FOTO_URL
-		{
-			get
-			{
-				return this._FOTO_URL;
-			}
-			set
-			{
-				if ((this._FOTO_URL != value))
-				{
-					this.OnFOTO_URLChanging(value);
-					this.SendPropertyChanging();
-					this._FOTO_URL = value;
-					this.SendPropertyChanged("FOTO_URL");
-					this.OnFOTO_URLChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_LOJA", DbType="VarChar(MAX)")]
-		public string ID_LOJA
-		{
-			get
-			{
-				return this._ID_LOJA;
-			}
-			set
-			{
-				if ((this._ID_LOJA != value))
-				{
-					this.OnID_LOJAChanging(value);
-					this.SendPropertyChanging();
-					this._ID_LOJA = value;
-					this.SendPropertyChanged("ID_LOJA");
-					this.OnID_LOJAChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOME_LOJA", DbType="VarChar(MAX)")]
-		public string NOME_LOJA
-		{
-			get
-			{
-				return this._NOME_LOJA;
-			}
-			set
-			{
-				if ((this._NOME_LOJA != value))
-				{
-					this.OnNOME_LOJAChanging(value);
-					this.SendPropertyChanging();
-					this._NOME_LOJA = value;
-					this.SendPropertyChanged("NOME_LOJA");
-					this.OnNOME_LOJAChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOME_PESSOA", DbType="VarChar(MAX)")]
-		public string NOME_PESSOA
-		{
-			get
-			{
-				return this._NOME_PESSOA;
-			}
-			set
-			{
-				if ((this._NOME_PESSOA != value))
-				{
-					this.OnNOME_PESSOAChanging(value);
-					this.SendPropertyChanging();
-					this._NOME_PESSOA = value;
-					this.SendPropertyChanged("NOME_PESSOA");
-					this.OnNOME_PESSOAChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOTO_PERFIL", DbType="VarChar(MAX)")]
-		public string FOTO_PERFIL
-		{
-			get
-			{
-				return this._FOTO_PERFIL;
-			}
-			set
-			{
-				if ((this._FOTO_PERFIL != value))
-				{
-					this.OnFOTO_PERFILChanging(value);
-					this.SendPropertyChanging();
-					this._FOTO_PERFIL = value;
-					this.SendPropertyChanged("FOTO_PERFIL");
-					this.OnFOTO_PERFILChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<Table>();
 			}
 		}
 	}
@@ -549,7 +295,7 @@ namespace Lojaonline.DATA
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_LOJA", DbType="NVarChar(MAX)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_LOJA", DbType="NVarChar(250)")]
 		public string ID_LOJA
 		{
 			get
@@ -569,7 +315,7 @@ namespace Lojaonline.DATA
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_FOTO", DbType="NVarChar(MAX)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_FOTO", DbType="NVarChar(250)")]
 		public string ID_FOTO
 		{
 			get
@@ -665,6 +411,260 @@ namespace Lojaonline.DATA
 					this._REACT = value;
 					this.SendPropertyChanged("REACT");
 					this.OnREACTChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[Table]")]
+	public partial class Table : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private string _ID_FOTO;
+		
+		private string _APARECE;
+		
+		private string _NAME;
+		
+		private string _FOTO_URL;
+		
+		private string _ID_LOJA;
+		
+		private string _NOME_LOJA;
+		
+		private string _NOME_PESSOA;
+		
+		private string _FOTO_PERFIL;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnID_FOTOChanging(string value);
+    partial void OnID_FOTOChanged();
+    partial void OnAPARECEChanging(string value);
+    partial void OnAPARECEChanged();
+    partial void OnNAMEChanging(string value);
+    partial void OnNAMEChanged();
+    partial void OnFOTO_URLChanging(string value);
+    partial void OnFOTO_URLChanged();
+    partial void OnID_LOJAChanging(string value);
+    partial void OnID_LOJAChanged();
+    partial void OnNOME_LOJAChanging(string value);
+    partial void OnNOME_LOJAChanged();
+    partial void OnNOME_PESSOAChanging(string value);
+    partial void OnNOME_PESSOAChanged();
+    partial void OnFOTO_PERFILChanging(string value);
+    partial void OnFOTO_PERFILChanged();
+    #endregion
+		
+		public Table()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_FOTO", DbType="NVarChar(250) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string ID_FOTO
+		{
+			get
+			{
+				return this._ID_FOTO;
+			}
+			set
+			{
+				if ((this._ID_FOTO != value))
+				{
+					this.OnID_FOTOChanging(value);
+					this.SendPropertyChanging();
+					this._ID_FOTO = value;
+					this.SendPropertyChanged("ID_FOTO");
+					this.OnID_FOTOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APARECE", DbType="NVarChar(50)")]
+		public string APARECE
+		{
+			get
+			{
+				return this._APARECE;
+			}
+			set
+			{
+				if ((this._APARECE != value))
+				{
+					this.OnAPARECEChanging(value);
+					this.SendPropertyChanging();
+					this._APARECE = value;
+					this.SendPropertyChanged("APARECE");
+					this.OnAPARECEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NAME", DbType="NVarChar(250)")]
+		public string NAME
+		{
+			get
+			{
+				return this._NAME;
+			}
+			set
+			{
+				if ((this._NAME != value))
+				{
+					this.OnNAMEChanging(value);
+					this.SendPropertyChanging();
+					this._NAME = value;
+					this.SendPropertyChanged("NAME");
+					this.OnNAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOTO_URL", DbType="NVarChar(250)")]
+		public string FOTO_URL
+		{
+			get
+			{
+				return this._FOTO_URL;
+			}
+			set
+			{
+				if ((this._FOTO_URL != value))
+				{
+					this.OnFOTO_URLChanging(value);
+					this.SendPropertyChanging();
+					this._FOTO_URL = value;
+					this.SendPropertyChanged("FOTO_URL");
+					this.OnFOTO_URLChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_LOJA", DbType="NVarChar(250)")]
+		public string ID_LOJA
+		{
+			get
+			{
+				return this._ID_LOJA;
+			}
+			set
+			{
+				if ((this._ID_LOJA != value))
+				{
+					this.OnID_LOJAChanging(value);
+					this.SendPropertyChanging();
+					this._ID_LOJA = value;
+					this.SendPropertyChanged("ID_LOJA");
+					this.OnID_LOJAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOME_LOJA", DbType="NVarChar(250)")]
+		public string NOME_LOJA
+		{
+			get
+			{
+				return this._NOME_LOJA;
+			}
+			set
+			{
+				if ((this._NOME_LOJA != value))
+				{
+					this.OnNOME_LOJAChanging(value);
+					this.SendPropertyChanging();
+					this._NOME_LOJA = value;
+					this.SendPropertyChanged("NOME_LOJA");
+					this.OnNOME_LOJAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOME_PESSOA", DbType="NVarChar(250)")]
+		public string NOME_PESSOA
+		{
+			get
+			{
+				return this._NOME_PESSOA;
+			}
+			set
+			{
+				if ((this._NOME_PESSOA != value))
+				{
+					this.OnNOME_PESSOAChanging(value);
+					this.SendPropertyChanging();
+					this._NOME_PESSOA = value;
+					this.SendPropertyChanged("NOME_PESSOA");
+					this.OnNOME_PESSOAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOTO_PERFIL", DbType="NVarChar(250)")]
+		public string FOTO_PERFIL
+		{
+			get
+			{
+				return this._FOTO_PERFIL;
+			}
+			set
+			{
+				if ((this._FOTO_PERFIL != value))
+				{
+					this.OnFOTO_PERFILChanging(value);
+					this.SendPropertyChanging();
+					this._FOTO_PERFIL = value;
+					this.SendPropertyChanged("FOTO_PERFIL");
+					this.OnFOTO_PERFILChanged();
 				}
 			}
 		}

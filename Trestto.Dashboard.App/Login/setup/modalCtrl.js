@@ -21,7 +21,7 @@ function modalCtrl($scope, $location, $routeParams, $uibModal, $rootScope) {
     }
 
     $scope.like1 = function () {
-        debugger;
+        
             $('.like1').toggleClass('like-active');
             $('.like1').next().toggleClass('hidden');
 
@@ -67,7 +67,7 @@ function modalCtrl($scope, $location, $routeParams, $uibModal, $rootScope) {
 
 
     $scope.love = function () {
-        debugger;
+        
         $('.love').toggleClass('like-active');
         $('.love').next().toggleClass('hidden');
         $rootScope.questionario.react = 'love';

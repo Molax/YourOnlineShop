@@ -231,6 +231,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\param.cs" />
     <Compile Include="Models\Quest.cs" />
+    <Compile Include="Models\Relatorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
