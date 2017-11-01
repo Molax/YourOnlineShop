@@ -344,6 +344,21 @@
         ul.sm-wrap a {
             text-decoration: none;
         }
+
+    .login-form .no-account {
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-form .sign-up {
+        margin: 10px auto 0 !important;
+        position: relative;
+        display: block !important;
+        width: 85px;
+    }
 </style>
 <head>
     <title>E-Commerce Maker - Sign In</title>
@@ -361,9 +376,9 @@
 
     <a href="#" title="">Forgot your password?</a>
 
-    <div>
-        <a href="#" title="">Don't have an account?</a>
-        <a id="signup" title="">Sign Up</a>
+    <div class="login-form">
+        <a href="#" title="" class="no-account">Don't have an account?</a>
+        <a id="signup" title="" class="sign-up">Sign Up</a>
     </div>
     <div class="social-wrap a">
         <button style="display: block ;
@@ -377,7 +392,7 @@
         cursor: pointer!important;
         -webkit-transition: all 0.3s !important;
         -moz-transition: all 0.3s !important;
-        transition: all 0.3s !important;" ng-click="click()" class="logins fb-login-button"  data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"">
+        transition: all 0.3s !important;" ng-click="click()" class="logins fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" ">
             Sign up with Facebook
         </button>
 
@@ -437,14 +452,14 @@
             FB.Event.subscribe('auth.login', function (response) {
                 if (response.status == "connected") {
                     window.location.href = "#/setup";
-                    
+
                 }
                 else {
                     window.location.reload();
                 }
             });
             FB.Event.unsubscribe('auth.logout', function (response) {
-                
+
                 //window.location.reload();
             });
         };
